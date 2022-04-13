@@ -23,8 +23,8 @@ const reactionSchema = new Schema({
     get: createdAtVal => moment(createdAtVal).format('MMM DD, YYYY [at] hh:mm a')
 },
     toJSON: {
-    virtuals: true,
-    getters: true
+    // virtuals: true,
+    // getters: true
 },
     id: false
 });
@@ -51,8 +51,8 @@ const thoughtSchema = new Schema({
 },
     {
         toJSON: {
-            virtuals: true,
-            getters: true
+            // virtuals: true,
+            // getters: true
         },
         id: false
     }
