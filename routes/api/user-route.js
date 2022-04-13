@@ -1,4 +1,6 @@
- const router = require('express').Router();
+const path = require("path");
+const router = require('express').Router();
+const User = require('../../models/User');
 
  const {
      getAllUsers,

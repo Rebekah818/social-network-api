@@ -8,7 +8,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
-app.use(require('./routes'));
+app.use(require('./routes/api/thought-route'));
+app.use(require('./routes/api/user-route'));
+app.use(require('./routes/index'));
+
 
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/social-network-API', {
     useFindAndModify: false,
