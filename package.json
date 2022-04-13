@@ -3,5 +3,23 @@
     "express": "^4.17.3",
     "moment": "^2.29.2",
     "mongoose": "^6.2.10"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "social-network-api",
+  "description": "This project is an api built for the social-network-app where users can share their thoughts and create a list of friends.",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rebekah818/social-network-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rebekah818/social-network-api/issues"
+  },
+  "homepage": "https://github.com/Rebekah818/social-network-api#readme"
 }
