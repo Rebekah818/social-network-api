@@ -1,7 +1,7 @@
 const { Users } = require('../models');
 
 const usersControl = {
-    creaeteUser({ body }, res) {
+    createUser({ body }, res) {
         Users.create(body)
             .then(dbUsersData => res.json(dbUsersData))
             .catch(err => res.status(400).json(err));
