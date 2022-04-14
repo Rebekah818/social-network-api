@@ -36,6 +36,7 @@ const usersControl = {
                 res.status(400).json(err)
             })
     },
+
     updateUsers({ params, body }, res) {
         Users.findOneAndUpdate({ _id: params.id }, body, { new: true, runValidators: true })
             .then(dbUsersData => {
