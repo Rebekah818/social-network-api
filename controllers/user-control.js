@@ -9,7 +9,7 @@ const usersControl = {
     },
     getAllUsers(req, res) {
         Users.find({})
-            .populate({ path: 'thoughts', select: '-_v' })
+            .populate({ path: 'thought', select: '-_v' })
             .populate({ path: 'friends', select: '-_v' })
             .select('-_v')
             .then(dbUsersData => res.json(dbUsersData))
@@ -20,7 +20,7 @@ const usersControl = {
     },
     getUsersById({ params }, res) {
         Users.findOne({ _id: params.id })
-            .populate({ path: 'thoughts', select: '-_v' })
+            .populate({ path: 'thought', select: '-_v' })
             .populate({ path: 'friends', select: '-_v' })
             .select('-_v')
             .then(dbUsersData => {
