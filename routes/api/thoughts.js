@@ -1,6 +1,6 @@
 const path = require("path");
 const router = require('express').Router();
-const Thoughts = require('../../models/User');
+const Thoughts = require('../../models/Users');
 
 const {
     getAllThoughts,

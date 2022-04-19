@@ -1,5 +1,5 @@
-const { User, Thought } = require('../models');
-const { db } = require('../models/User');
+const { Users, Thoughts } = require('../models');
+const { db } = require('../models/Users');
 
 
 // Create Thought Controller

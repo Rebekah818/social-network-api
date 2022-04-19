@@ -5,7 +5,8 @@
     "mongoose": "^6.2.10"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "seed": "node seed.js"
   },
   "name": "social-network-api",
   "description": "This project is an api built for the social-network-app where users can share their thoughts and create a list of friends.",
